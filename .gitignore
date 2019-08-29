@@ -3,3 +3,8 @@
 !/logs/README.md
 /.idea/
 /node_modules
+.env.example
+.env
+.editorconfig
+.gitattributes
+npm-debug.log
