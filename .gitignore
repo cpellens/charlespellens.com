@@ -8,3 +8,6 @@
 .editorconfig
 .gitattributes
 npm-debug.log
+/public/css/
+/public/js/
+/public/mix-manifest.json
