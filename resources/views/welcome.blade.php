@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Charles Pellens / Web Developer and Designer / Home</title>
     <link rel="stylesheet" href="https://use.typekit.net/hgc0qqn.css">
-    <link rel="stylesheet" href="//charlespellens.com/style.css">
+    <link rel="stylesheet" href="//charlespellens.com/css/app.css">
 </head>
 <body>
 <header>
@@ -312,5 +312,8 @@
         </div>
     </div>
 </footer>
+
+<script type="text/javascript" src="./js/app.js"></script>
+
 </body>
 </html>

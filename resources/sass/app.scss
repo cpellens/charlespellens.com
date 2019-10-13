@@ -1,8 +1,421 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@keyframes bounce-in {
+    0% {
+        margin-top: -1vmin;
+        margin-bottom: 1vmin;
+        opacity: 0;
+        transform: scale(0);
+    }
 
-// Variables
-@import 'variables';
+    60% {
+        transform: scale(1.3);
+    }
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+    100% {
+        margin-top: 0;
+        margin-bottom: 0;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce-in-up {
+    0% {
+        margin-top: 1vmin;
+        margin-bottom: -1vmin;
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    60% {
+        transform: scale(1.6);
+    }
+
+    100% {
+        margin-top: 0;
+        margin-bottom: 0;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        margin-top: -1vmin;
+        margin-bottom: 1vmin;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 0;
+        margin-bottom: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-up {
+    0% {
+        margin-top: 1vmin;
+        margin-bottom: -1vmin;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 0;
+        margin-bottom: 0;
+        opacity: 1;
+    }
+}
+
+body, html {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: open-sans, arial, helvetica, sans-serif;
+    background-color: white;
+    font-size: 1.2vmin;
+    color: #333;
+}
+
+header {
+    height: 20vmin;
+    background: url(//cdn.charlespellens.com/portfolio/noise.png), linear-gradient(330deg, #4374ba, #8042b9);
+    line-height: 20vmin;
+    overflow: hidden;
+}
+
+header > div {
+    line-height: inherit;
+}
+
+div.site-width {
+    margin-left: 25vmin;
+    margin-right: 25vmin;
+    overflow: hidden;
+}
+
+div.shaded {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+div#portrait {
+    width: 20vmin;
+    height: 20vmin;
+    overflow: hidden;
+    position: absolute;
+    top: 10vmin;
+    left: 29.5vmin;
+    z-index: 1;
+    border: 0.5vmin rgba(255, 255, 255, 0.8) solid;
+
+    box-shadow: 0 0 1vmin rgba(0, 0, 0, 0.7);
+    animation: fade-in 0.5s 1 ease;
+
+    box-sizing: border-box;
+}
+
+div#portrait img {
+    width: inherit;
+    height: inherit;
+    user-select: none;
+    pointer-events: none;
+}
+
+@keyframes slide-in {
+    0% {
+        right: 25vmin;
+        opacity: 0;
+    }
+
+    100% {
+        right: 30vmin;
+        opacity: 0.1;
+    }
+}
+
+header > span#php {
+    font-size: 22vmin;
+    position: absolute;
+    top: -2vmin;
+    right: 30vmin;
+    transform: rotate(-20deg);
+    clip: rect(0, 0, 100%, 20vmin);
+    color: white;
+    opacity: 0.1;
+    font-weight: 300;
+    font-family: open-sans;
+    z-index: 0;
+    user-select: none;
+    pointer-events: none;
+
+    animation: slide-in 0.5s 1 ease;
+}
+
+header span#title {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0.1vmin solid white;
+    color: white;
+    display: inline-block;
+    font-family: rogue-serif;
+    font-size: 4vmin;
+    height: 1.75em;
+    letter-spacing: 0.05em;
+    line-height: 4vmin;
+    margin-left: 38vmin;
+    margin-top: 6vmin;
+    opacity: 0.5;
+    overflow: hidden;
+    padding: 1.5vmin;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+#content {
+    background-color: white;
+    display: block;
+    overflow: hidden;
+    min-height: 80vh;
+    box-sizing: border-box;
+    position: relative;
+    /* padding-bottom: 20vmin; */
+}
+
+.columns {
+    display: flex;
+}
+
+.columns > * {
+    padding: 2vmin;
+    flex: 4;
+}
+
+.columns > *.centered {
+    text-align: center;
+}
+
+img.badge {
+    max-width: 6vmin;
+    max-height: 6vmin;
+
+    transition: transform ease-in-out 0.25s;
+    animation: bounce-in 0.7s 1 ease;
+}
+
+div.columns.badges div.column:nth-child(even) img.badge {
+    animation: bounce-in-up 1s 1 ease;
+}
+
+img.badge:hover {
+    transform:scale(1.5);
+}
+
+img.badge.rect {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+img.photo {
+    box-shadow: 0 3vmin 3vmin rgba(0, 0, 0, 0.4);
+}
+
+img.soc-link {
+    opacity: 0.6;
+    transition: opacity 0.5s ease-in;
+}
+
+img.soc-link:hover {
+    opacity: 1;
+}
+
+nav {
+    padding-top: 13vmin !important;
+    background-color: rgba(0, 0, 0, 0.1);
+    flex: 0 !important;
+    min-width: 25vmin;
+}
+
+h1 {
+    margin: 0;
+    line-height: 1em;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    border-bottom: 0.15vmin solid #4374ba;
+    line-height: 1.5em;
+    font-family: rogue-serif;
+    text-shadow: 0 0.1vmin 0 rgba(255, 255, 255, 0.8);
+
+    color: #4374ba;
+}
+
+h2 {
+    margin: 0;
+    line-height: 1.5em;
+    font-weight: 300;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border-bottom: 0.08vmin solid #8042b9;
+    text-shadow: 0 0.05vmin 0 rgba(255, 255, 255, 0.8);
+
+
+    color: #8042b9;
+}
+
+nav > h1 {
+    color: #8042b9;
+    border-bottom: none;
+}
+
+nav > hr {
+    background-color: #8042b9;
+    height: 0.1vmin;
+}
+
+hr {
+    border: 0;
+    height: 0.15vmin;
+    background-color: #4374ba;
+    margin-bottom: 1vmin;
+}
+
+p {
+    text-indent: 1em;
+    text-align: justify;
+}
+
+footer {
+    background-image: url(//cdn.charlespellens.com/portfolio/noise.png);
+    height: 20vmin;
+    box-sizing: border-box;
+    color: #999;
+    background-color: #333;
+}
+
+footer img {
+    max-height: 7vmin;
+}
+
+footer > div {
+    height: inherit;
+    box-sizing: inherit;
+}
+
+footer a {
+    color: #4374ba;
+}
+
+footer a:hover {
+    color: #6c92c7;
+}
+
+footer h3 {
+    margin: 0;
+    margin-bottom: 1vmin;
+    padding: 0;
+    display: inline-block;
+    text-shadow: 0 0.1vmin 0 rgba(0, 0, 0, 0.8);
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+table.definition {
+    width: 100%;
+    padding: 0;
+    border-spacing: 0;
+    border: solid 0.4vmin #fff;
+    border-collapse: collapse;
+}
+
+table.definition tr td {
+    border-bottom: solid 0.4vmin #fff;
+}
+
+table.definition tr > td:first-child {
+    background-color: #AAAAAA;
+    width: 25%;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0.1vmin 0 rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 0.25vmin;
+}
+
+table.definition tr > td:last-child {
+    padding-left: 0.25vmin;
+    padding-right: 0.25vmin;
+    background-color: white;
+}
+
+table.definition tr > td > div.bar {
+    background-color: #8042b9;
+    background-image: linear-gradient(0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    padding: 0.25vmin;
+    box-sizing: border-box;
+    color: white;
+    text-shadow: 0 0.1vmin 0 rgba(0, 0, 0, 0.4);
+    font-weight: bolder;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    line-height: 3em;
+    background-position: 100% 0;
+    background-image: url(//cdn.charlespellens.com/portfolio/noise.png), linear-gradient(330deg, #4374ba, #8042b9, red, yellow);
+    background-size: 400% 100%;
+    color: white;
+    box-sizing: border-box;
+    padding-left: 2vmin;
+    font-family: rogue-serif;
+    font-size: 1.2em;
+    margin-bottom: 2vmin;
+    margin-top: 2vmin;
+    box-shadow: 0 1vmin 1vmin rgba(0, 0, 0, 0.3);
+
+    transition: background-position 0.25s, transform 0.25s, box-shadow 0.25s;
+}
+
+nav a:hover {
+    background-position: 0 0;
+    box-shadow: 0 1vmin 2vmin rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+div.columns.badges > div {
+    line-height: 6vmin;
+    height: 6vmin;
+    padding: 0;
+}
+
+div.feature {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-top: 1vmin;
+    margin-bottom: 1vmin;
+}
+
+div.feature p {
+    text-align: left;
+}
+
+div.columns.feature > div.column {
+    padding: 1vmin;
+}
+
+@media (max-aspect-ratio: 16/11) {
+    .site-width {
+        margin: 0 !important;
+    }
+
+    #portrait {
+        left: 4.5vmin !important;
+    }
+
+    img.badge {
+        max-width: 3vmin;
+        max-height: 3vmin;
+    }
+
+    #php {
+        right: 0 !important;
+        animation: none !important;
+    }
+}
