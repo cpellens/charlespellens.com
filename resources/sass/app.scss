@@ -356,7 +356,7 @@ table.definition tr > td > div.bar {
     text-align: center;
 }
 
-nav a {
+nav .menu a {
     display: block;
     line-height: 3em;
     background-position: 100% 0;
@@ -374,10 +374,18 @@ nav a {
     transition: background-position 0.25s, transform 0.25s, box-shadow 0.25s;
 }
 
-nav a:hover {
+nav .menu a:hover {
     background-position: 0 0;
     box-shadow: 0 1vmin 2vmin rgba(0, 0, 0, 0.2);
     transform: scale(1.1);
+}
+
+nav > a {
+    color: #4374ba;
+}
+
+nav > a:visited {
+    color: #4374ba;
 }
 
 div.columns.badges > div {
@@ -418,4 +426,11 @@ div.columns.feature > div.column {
         right: 0 !important;
         animation: none !important;
     }
+}
+
+div#content > div.site-width.shaded {
+    background-image: url(//cdn.charlespellens.com/portfolio/bkg-laptop.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 45vmin;
 }

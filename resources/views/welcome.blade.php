@@ -14,16 +14,14 @@
         <div id="portrait">
             <img src="//cdn.charlespellens.com/portfolio/profile-pic.jpg" alt="Portrait of Charles Pellens">
         </div>
-
         <span id="title">
-                Charles Pellens
-            </span>
+            Charles Pellens
+        </span>
     </div>
     <span id="php">
-            &lt;?PHP
-        </span>
+        &lt;?PHP
+    </span>
 </header>
-
 <div id="content">
     <div class="site-width shaded">
         <section class="columns">
@@ -34,15 +32,20 @@
                     My name is Charles Pellens. I am an experienced website developer who has specialized in PHP for nearly three years professionally. I began my programming hobby at the age of 14. Now at the age of {{floor((time() - strtotime('1994-12-05')) / (365.25*24*60*60))}}, I have a set of skills that makes me a well-rounded and capable web developer and designer.
                 </p>
                 <p>
-                    My goal is to find a place of work where I can grow and help grow, while challenging and refining my skills and abilities.
+                    My goal is to produce beautiful, responsive, and efficient websites while growing more knowledgable and versatile in my web development skills. 
+                </p>
+                <p>
+                    Web Developer at <a href="//tmprod.com" target="_blank">Trademark Productions</a>, located in Royal Oak, MI.
                 </p>
                 <h1>nav</h1>
                 <hr>
-                <a href="#top">Who is Charles?</a>
-                <a href="#skills">Skills &amp; Abilities</a>
-                <a href="#tools">Tool Preferences</a>
-                <a href="#work">Work History</a>
-                <a href="#hobbies">Hobbies</a>
+                <div class="menu">
+                    <a href="#top">Who is Charles?</a>
+                    <a href="#skills">Skills &amp; Abilities</a>
+                    <a href="#tools">Tool Preferences</a>
+                    <a href="#work">Work History</a>
+                    <a href="#hobbies">Hobbies</a>
+                </div>
             </nav>
 
             <div style="flex: 3;">
@@ -87,6 +90,12 @@
                                 <td>PHP</td>
                                 <td>
                                     <div class="bar" style="width: 100%">100%</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Magento 2</td>
+                                <td>
+                                    <div class="bar" style="width: 70%">70%</div>
                                 </td>
                             </tr>
                             <tr>
@@ -166,6 +175,9 @@
                         <img src="//cdn.charlespellens.com/portfolio/visual-studio-code-1.svg" alt="Visual Studio Code" class="badge rect">
                     </div>
                     <div class="column centered">
+                        <img src="//cdn.charlespellens.com/portfolio/magento.svg" alt="Magento 2" class="badge rect">
+                    </div>
+                    <div class="column centered">
                         <img src="//cdn.charlespellens.com/portfolio/010-github.png" alt="GitHub" class="badge">
                     </div>
                     <div class="column centered">
@@ -202,6 +214,16 @@
                             </div>
                             <div class="column" style="flex: 1; text-align: center;">
                                 <img src="//cdn.charlespellens.com/portfolio/010-github.png" alt="GitHub" class="badge rect">
+                            </div>
+                        </div>
+                        <div class="columns feature">
+                            <div class="column" style="flex: 1; text-align: center;">
+                                <img src="//cdn.charlespellens.com/portfolio/phpstorm.svg" alt="PHPStorm, by JetBrains.com" class="badge rect">
+                            </div>
+                            <div class="column">
+                                <p>
+                                    <strong>PHPStorm</strong> is my IDE of choice for its extensive plugin repository, and rich feature set that includes database design tools, Git integration, and several other nifty features.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -243,6 +265,17 @@
                 </div>
 
                 <h1 id="work">Professional Work</h1><br>
+
+                <h2>Trademark Productions - Royal Oak, MI</h2>
+                <strong>August 2019 - Present</strong>
+                <ul>
+                    <li>Managed web development tasks across several projects at a time</li>
+                    <li>Performed the transition from conceptual compositions to real, live web sites.</li>
+                    <li>Performed basic server maintenance</li>
+                </uL>
+
+                <br>
+
                 <h2>RealFlavors - Bay City, MI</h2>
                 <strong>February 2019 - July 2019</strong>
                 <ul>
@@ -301,7 +334,9 @@
                 E-Mail: <a href="mailto:contact@charlespellens.com">contact@charlespellens.com</a><br>
                 Phone: 989.220.1094<br>
                 <hr>
-
+                <p>
+                    I look forward to doing what I can do to help you achieve your goals.
+                </p>
             </div>
             <div class="column" style="text-align: right;">
                 <a href="//linkedin.com/in/cpellens" target="_blank"><img
