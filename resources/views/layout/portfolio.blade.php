@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Charles Pellens / Web Developer and Designer / Home</title>
     <link rel="stylesheet" href="https://use.typekit.net/hgc0qqn.css">
-    <link rel="stylesheet" href="//charlespellens.com/css/app.css">
+    <link rel="stylesheet" href="//{{ $_SERVER['HTTP_HOST'] }}/css/app.css">
 </head>
 <body>
 <header>
