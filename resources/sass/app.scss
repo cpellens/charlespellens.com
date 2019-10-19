@@ -137,7 +137,7 @@ header > span#php {
     position: absolute;
     top: -2vmin;
     right: 30vmin;
-    transform: rotate(-20deg);
+    transform: rotate(-20deg) translateX(-5vmin);
     clip: rect(0, 0, 100%, 20vmin);
     color: white;
     opacity: 0.1;
@@ -425,6 +425,7 @@ div.columns.feature > div.column {
     #php {
         right: 0 !important;
         animation: none !important;
+        transform: rotate(-20deg);
     }
 }
 
