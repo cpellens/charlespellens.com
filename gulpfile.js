@@ -1,5 +1,3 @@
-// require("dotenv").config();
-
 var gulp = require("gulp");
 var browserSync = require("browser-sync");
 var changed = require("gulp-changed");
@@ -16,6 +14,16 @@ var images = {
     dest: "public/images",
     plugin: require("gulp-imagemin")
 };
+var scripts = {
+    src: "resources/js/**/*.js",
+    dest: "public/js",
+    plugin: {
+        concat: require("gulp-concat"),
+        uglify: require("gulp-uglify"),
+        babel: require("gulp-babel"),
+        webpack: require('webpack-stream')
+    }
+}
 
 gulp.task("sass", function () {
     return gulp.src(sass.src)
@@ -23,6 +31,16 @@ gulp.task("sass", function () {
             outputStyle: "compressed"
         }))
         .pipe(gulp.dest(sass.dest));
+});
+
+gulp.task("scripts", function() {
+    return gulp.src(scripts.src)
+        .pipe(scripts.plugin.webpack({
+            mode: 'development'
+        }))
+        .pipe(scripts.plugin.concat('app.js'))
+        .pipe(scripts.plugin.uglify())
+        .pipe(gulp.dest(scripts.dest));
 });
 
 gulp.task("reload", function (callback) {
@@ -48,4 +66,4 @@ gulp.task("images", function() {
         .pipe(gulp.dest(images.dest));
 });
 
-gulp.task("default", gulp.series("sass", "images"));
+gulp.task("default", gulp.series("sass", "scripts", "images"));
