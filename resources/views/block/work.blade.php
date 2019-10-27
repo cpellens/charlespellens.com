@@ -1,4 +1,4 @@
-<div class="lax" data-lax-translate-x="900 100, 1200 0" data-lax-opacity="900 0.5, 1200 1">
+<div>
     <h1 id="work">Professional Work</h1><br>
 
     <h2>Trademark Productions - Royal Oak, MI</h2>

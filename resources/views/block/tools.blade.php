@@ -1,4 +1,4 @@
-<div class="lax" data-lax-translate-x="100 100, 300 0" data-lax-opacity="100 0.5, 300 1">
+<div>
     <h1 id="tools">The Tools</h1>
     <div class="columns">
         <div class="column">

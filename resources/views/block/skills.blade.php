@@ -1,7 +1,7 @@
 <div>
     <h1 id="skills">Skills &amp; Abilities</h1>
     <br>
-    <div class="columns badges lax" data-lax-translate-y="0 0, 1200 -60">
+    <div class="columns badges">
         <div class="column centered">
             <img src="//cdn.charlespellens.com/portfolio/nginx.svg" alt="NGINX" class="badge">
         </div>
@@ -111,7 +111,7 @@
             </table>
         </div>
     </div>
-    <div class="columns badges lax"  data-lax-translate-y="600 0, 1800 -60">
+    <div class="columns badges">
         <div class="column centered">
             <img src="//cdn.charlespellens.com/portfolio/feather.svg" alt="Apache" class="badge">
         </div>

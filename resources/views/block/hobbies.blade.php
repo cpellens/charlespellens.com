@@ -1,4 +1,4 @@
-<div class="lax" data-lax-translate-x="2000 100, 2300 0" data-lax-opacity="2000 0.5, 2300 1">
+<div>
     <h1 id="hobbies">Hobbies</h1>
     <br>
     <h2>Photography</h2>
