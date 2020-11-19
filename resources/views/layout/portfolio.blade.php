@@ -64,6 +64,7 @@
 </footer>
 
 <script type="text/javascript" src="./js/app.js"></script>
+<script async defer data-website-id="9e3def92-85e2-4ea5-8d98-e6b4e084ef44" src="https://analytics.michiganwebdev.com/umami.js"></script>
 
 </body>
 </html>
